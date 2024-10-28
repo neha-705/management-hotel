@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #9f0606;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container{
+    margin:0px;
+}
+header h1 {
+    text-align: center;
+    font-size:3rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content:end;
+    gap:20px;
+    list-style: none;
+}
+
+
+nav ul li a {
+    color: #d9e9e1;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+#home .container h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px rgb(23, 21, 152);
+    margin-bottom:20px;
+}
+#home .container p{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+#home .container button{
+    font-size:1.5rem;
+    padding:15px;
+}
+section {
+    padding: 60px 0;
+}
+
+#home {
+    background: url("https://wallpaperaccess.com/full/2690753.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home h2 {
+    font-size: 48px;
+}
+/* About Section Styling */
+#about {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+}
+body {
+        background-image: url('http://wallpapercave.com/wp/QJ0trsu.jpg');
+
+    background-size: cover;           /* Makes the image cover the whole screen */
+    background-repeat: no-repeat;     /* Prevents the image from repeating */
+    background-position: center;      /* Centers the image */
+    margin: 0;                        /* Removes default body margin */
+    height: 100vh;                    /* Ensures the image covers full height of viewport */
+}
+#about h2 {
+    font-size: 48px; /* Increase the font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about p {
+    font-size: 20px; /* Increase the font size for the paragraph */
+    line-height: 1.5; /* Increase line height for better readability */
+    max-width: 800px; /* Set a maximum width for better text layout */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 0 20px; /* Add padding for responsiveness */
+}
+
+
+.room {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #461baa;
+}
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px; /* Some padding */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 400px; /* Set a maximum width for the modal */
+    width: 90%; /* Make it responsive */
+}
+
+.close {
+    color: #aaa; /* Grey color */
+    float: right; /* Float to the right */
+    font-size: 28px; /* Large text */
+    font-weight: bold; /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Contact Form Styling */
+#contactForm {
+    max-width: 400px;  /* Set a maximum width for the form */
+    margin: 0 auto;    /* Center the form horizontally */
+    padding: 20px;     /* Add some padding inside the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a slight background for visibility */
+    border-radius: 2px; /* Rounded corners */
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;          /* Make inputs and textarea take full width */
+    padding: 10px;       /* Add padding for better spacing */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 4px;  /* Rounded corners for input fields */
+}
+
+#contactForm button {
+    width: 100%;         /* Button also takes full width */
+    padding: 10px;      /* Add padding */
+    background-color: #4CAF50; /* Button background color */
+    color: white;       /* Button text color */
+    border: none;       /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer;     /* Change cursor to pointer */
+}
+
+#contactForm button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}

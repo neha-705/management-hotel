@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gandu's Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Gandu's Hotel</h1>
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/rooms.html">Rooms</a></li>
+                    <li><a href="/booking.html">Booking</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Enjoy a Luxury Experience</h2>
+            <p>Experience world-class service and amenities at our hotel.</p>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Sample Hotel offers exceptional service, luxurious accommodations, and a warm atmosphere that makes you feel right at home.</p>
+        </div>
+    </section>
+
+    <section id="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <p>A spacious room with a beautiful city view.</p>
+                <img src="https://www.mhotel.in/img/super/01.jpg">
+
+            </div>
+            <div class="room">
+                <h3>Suite</h3>
+                <p>Experience true luxury in our premium suite.</p>
+                <img src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/hotel-daspalla-vishakhapatnam/Platinum_Suite_at_Hotel_Daspalla_Vishakhapatnam_4_obziyd">
+
+            </div>
+        </div>
+    </section>
+    <!-- Modal for Booking Form -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingForm()">&times;</span>
+            <h2>Book Your Stay</h2>
+            <form id="bookingForm">
+                <label for="checkin">Check-In Date:</label>
+                <input type="date" id="checkin" required><br>
+
+                <label for="checkout">Check-Out Date:</label>
+                <input type="date" id="checkout" required><br>
+
+                <label for="room">Room Type:</label>
+                <select id="room" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                </select><br>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" min="1" max="10" required><br>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+                <p>If any douts please call to the given phone number.</p>
+                <p>Phone: 9133821629</p>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 gandu's Hotel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
